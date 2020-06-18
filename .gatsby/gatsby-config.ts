@@ -1,22 +1,22 @@
-const siteTitle = `Gatsby Starter hpp`;
-const siteUrl = `https://gatsby-starter-hpp.netlify.com`;
-const siteDescription = `simple gatsby starter with mdx, typescript, pwa`;
-const backgroundColor = `#09090f`;
-const themeColor = `#09090f`;
+const siteTitle = `Woods At Web | Gen Senoo`;
+const siteUrl = `https://woodsatweb.com`;
+const siteDescription = `Woods At Web公式サイト 代表：妹尾 弦`;
+const backgroundColor = `#FFFFFF`;
+const themeColor = `#062983`;
 
 const siteMetadata = {
   siteTitle,
-  siteTitleAlt: `Gatsby Starter hpp - @hppRC/gatsby-starter-hpp`,
-  siteHeadline: `Gatsby Starter hpp - Gatsby Starter from @hppRC`,
+  siteTitleAlt: `Woods At Web公式サイト 代表：妹尾 弦`,
+  siteHeadline: `Woods At Web公式サイト 代表：妹尾 弦`,
   siteUrl,
   siteDescription,
-  siteLanguage: `en`,
-  author: `@hpp_ricecake`, // twitter account id
+  siteLanguage: `jp`,
+  author: `@gengineer18`, // twitter account id
   basePath: `/`,
   social: {
-    twitter: `https://twitter.com/hpp_ricecake`,
-    github: `https://github.com/hppRC`,
-    qiita: `https://qiita.com/hppRC`,
+    twitter: `https://twitter.com/gengineer18`,
+    github: `https://github.com/gengineer18`,
+    facebook: `https://www.facebook.com/gen.senoo`,
   },
 };
 
@@ -83,7 +83,7 @@ export default {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: `UA-149661454-1`,
+        trackingId: ``,
       },
     },
     // gatsby-plugin-manifest should be described before gatsby-plugin-offline
