@@ -21,7 +21,7 @@ type SiteMetadata =
           | {
               twitter: string;
               github: string;
-              qiita: string;
+              facebook: string;
             }
           | undefined;
       }>
@@ -46,7 +46,7 @@ export default (): SiteMetadata => {
           social {
             twitter
             github
-            qiita
+            facebook
           }
         }
       }

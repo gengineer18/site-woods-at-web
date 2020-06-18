@@ -9,7 +9,7 @@ import { GatsbyNode } from 'gatsby';
 //    }
 // `;
 
-// TIPS: you can't use QraphQL query fragments to get fluid object in gatsby-node.
+// TIPS: you can't use GraphQL query fragments to get fluid object in gatsby-node.
 
 export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions: { createPage } }) => {
   // const result = await graphql(query);
