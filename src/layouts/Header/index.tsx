@@ -3,27 +3,30 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
-import ModeButton from './mode-button';
-
 const Component: React.FCX = ({ className }) => (
   <header className={className}>
-    <h1>Gatsby starter hpp</h1>
+    <h1>Woods At Web</h1>
     <nav>
       <ul>
         <li>
-          <Link to='/'>Top</Link>
+          <Link to='#top'>Top</Link>
         </li>
         <li>
-          <Link to='/about'>About</Link>
+          <Link to='#about'>About Me</Link>
         </li>
         <li>
-          <Link to='/contact'>Contact</Link>
+          <Link to='#works'>Contact</Link>
         </li>
         <li>
-          <Link to='/404'>404</Link>
+          <Link to='#skills'>Skill Set</Link>
         </li>
         <li>
-          <ModeButton />
+          <Link to='#contact'>Contact me</Link>
+        </li>
+        <li>
+          <a href='https://blog.woodsatweb.com/' target='_blank' rel='noreferrer'>
+            Blog
+          </a>
         </li>
       </ul>
     </nav>
