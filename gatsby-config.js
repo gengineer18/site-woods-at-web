@@ -7,5 +7,6 @@ module.exports = {
         configDir: `.gatsby`,
       },
     },
+    `gatsby-plugin-material-ui`,
   ],
 };

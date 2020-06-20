@@ -7,7 +7,21 @@ import styled from '@emotion/styled';
 const Component: React.FCX = ({ className }) => (
   <main className={className}>
     <h1>this is Component page!</h1>
-    <AnyImage filename='banner.png' />
+    <div id='top'>
+      <AnyImage filename='banner.png' />
+    </div>
+    <div id='about'>
+      <AnyImage filename='banner.png' />
+    </div>
+    <div id='works'>
+      <AnyImage filename='banner.png' />
+    </div>
+    <div id='skills'>
+      <AnyImage filename='banner.png' />
+    </div>
+    <div id='contact'>
+      <AnyImage filename='banner.png' />
+    </div>
   </main>
 );
 
