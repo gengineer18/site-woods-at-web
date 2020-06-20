@@ -1,17 +1,20 @@
 import React from 'react';
+import { css } from '@emotion/core';
 
-import styled from '@emotion/styled';
+const date = new Date();
+const year = date.getFullYear();
+const copyRight = `Copyright © ${year} Woods At Web All Rights Reserved.`;
 
-const Component: React.FCX = ({ className }) => (
-  <footer className={className}>Copyright © 2020 hppRC All Rights Reserved.</footer>
-);
+const footer = css({
+  backgroundColor: `#e5012c`,
+  color: `white`,
+  display: `flex`,
+  alignItems: `center`,
+  justifyContent: `center`,
+  width: `100vw`,
+  height: `10vh`,
+});
 
-const StyledComponent = styled(Component)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 10vh;
-`;
+const Component: React.FCX = () => <footer css={footer}>{copyRight}</footer>;
 
-export default StyledComponent;
+export default Component;
