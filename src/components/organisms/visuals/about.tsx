@@ -1,14 +1,14 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import { visuals } from '../../../styles/index';
+import { Heading1 } from 'src/components/atoms/index';
+import { visuals } from 'src/styles/index';
 
 const about = css({
-  borderTop: `10px solid green`,
-  borderBottom: `10px solid pink`,
+  textAlign: `center`,
 });
 
 export const About: React.FCX = () => (
   <div css={[visuals, about]}>
-    <h1>About Me</h1>
+    <Heading1 size={4.8}>About Me</Heading1>
   </div>
 );
