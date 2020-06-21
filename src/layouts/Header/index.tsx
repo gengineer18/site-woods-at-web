@@ -1,34 +1,44 @@
-import { Button, AppBar, Toolbar, Typography } from '@material-ui/core';
+import { Button, AppBar, Toolbar } from '@material-ui/core';
 import React from 'react';
+import { css } from '@emotion/core';
 
 import styled from '@emotion/styled';
 
-const Component: React.FCX = ({ className }) => (
-  <header className={className}>
-    <AppBar position='static' color='inherit'>
-      <Toolbar>
-        <Typography variant='h3'>Woods At Web</Typography>
-        <Button color='inherit' href='#top'>
+const heading = css({
+  fontSize: `2.8rem`,
+});
+
+const appBar = css({
+  height: `10vh`,
+  borderBottom: `2px solid blue`,
+});
+
+const Component: React.FCX = () => (
+  <AppBar position='fixed' color='inherit' css={appBar}>
+    <Toolbar css={appBar}>
+      <h1 css={heading}>Woods At Web</h1>
+      <div>
+        <Button color='default' href='#top'>
           Top
         </Button>
-        <Button color='inherit' href='#about'>
+        <Button color='default' href='#about'>
           About Me
         </Button>
-        <Button color='inherit' href='#works'>
+        <Button color='default' href='#works'>
           Works
         </Button>
-        <Button color='inherit' href='#skills'>
+        <Button color='default' href='#skills'>
           Skill Set
         </Button>
-        <Button color='inherit' href='#contact'>
+        <Button color='default' href='#contact'>
           Contact Me
         </Button>
-        <Button color='inherit' href='https://blog.woodsatweb.com/' target='_blank' rel='noreferrer'>
+        <Button color='default' href='https://blog.woodsatweb.com/' target='_blank' rel='noreferrer'>
           Blog
         </Button>
-      </Toolbar>
-    </AppBar>
-  </header>
+      </div>
+    </Toolbar>
+  </AppBar>
 );
 
 const StyledComponent = styled(Component)`
@@ -37,6 +47,8 @@ const StyledComponent = styled(Component)`
   left: 0;
   z-index: 1000;
   width: 100%;
+  height: 10vh;
+  border-bottom: 3px solid blue;
 `;
 
 export default StyledComponent;
