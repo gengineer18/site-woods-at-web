@@ -3,7 +3,6 @@ import { css } from '@emotion/core';
 
 const anchor = css({
   height: `10vh`,
-  maxHeight: `64px`,
 });
 
 type anchorProp = {

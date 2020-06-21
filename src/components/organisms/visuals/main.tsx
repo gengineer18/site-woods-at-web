@@ -2,6 +2,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 import { visuals } from '../../../styles/index';
 
+// css
 const main = css({
   background: `linear-gradient(blue, white 25% 75%, red 100%)`,
   display: `flex`,
@@ -9,12 +10,17 @@ const main = css({
   alignItems: `center`,
 });
 
-const heading = css({
-  fontSize: `4.8rem`,
-});
+const heading = (size: number) =>
+  css({
+    fontSize: `${size}rem`,
+    textAlign: `center`,
+  });
 
 export const Main: React.FCX = () => (
   <div css={[visuals, main]}>
-    <h1 css={heading}>Woods At Web</h1>
+    <div>
+      <h1 css={heading(4.8)}>Woods At Web</h1>
+      <h2 css={heading(2.4)}>Welcome my web site!</h2>
+    </div>
   </div>
 );

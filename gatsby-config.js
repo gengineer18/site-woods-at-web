@@ -8,5 +8,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-material-ui`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/plugins/typography.ts`,
+      },
+    },
   ],
 };
