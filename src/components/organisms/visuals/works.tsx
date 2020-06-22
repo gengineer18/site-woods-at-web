@@ -1,6 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import { visuals } from '../../../styles/index';
+import { Heading1 } from 'src/components/atoms';
+import { visuals } from 'src/styles';
 
 const works = css({
   borderTop: `10px solid black`,
@@ -9,6 +10,6 @@ const works = css({
 
 export const Works: React.FCX = () => (
   <div css={[visuals, works]}>
-    <h1>My Works</h1>
+    <Heading1 size={4.8}>My Works</Heading1>
   </div>
 );

@@ -1,5 +1,7 @@
 import React from 'react';
-import { SEO, Anchor, Main, About, Works, Skills, Contact } from 'src/components';
+import { SEO } from 'src/components';
+import { Anchor } from 'src/components/atoms';
+import { Main, About, Works, Skills, Contact } from 'src/components/organisms';
 import { baseStyle } from 'src/styles';
 
 import styled from '@emotion/styled';
