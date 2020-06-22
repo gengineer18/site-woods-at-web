@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { visuals } from 'src/styles/index';
-import { Heading1, Heading2 } from 'src/components/atoms/index';
+import { Heading1, Heading2 } from 'src/components/atoms';
 
 // css
 const main = css({

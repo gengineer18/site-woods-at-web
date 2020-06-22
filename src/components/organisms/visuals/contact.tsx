@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import { Heading1 } from 'src/components/atoms/index';
-import { visuals } from 'src/styles/index';
+import { Heading1 } from 'src/components/atoms';
+import { visuals } from 'src/styles';
 
 const contact = css({
   borderTop: `10px solid blue`,
