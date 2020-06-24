@@ -4,11 +4,16 @@ import { Heading1, TechIcon } from 'src/components/atoms';
 import { visuals } from 'src/styles';
 import Grid from '@material-ui/core/Grid';
 
+type Skill = {
+  icon: string;
+  tech: string;
+};
+
 const skills = css({
   margin: `0 15vw`,
 });
 
-const skillArray = [
+const skillArray: Array<Skill> = [
   { icon: `javascript.png`, tech: `JavaScript` },
   { icon: `typescript.png`, tech: `TypeScript` },
   { icon: `vue.png`, tech: `Vue.js` },
