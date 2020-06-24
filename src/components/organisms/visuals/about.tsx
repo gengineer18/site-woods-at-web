@@ -27,8 +27,8 @@ export const About: React.FCX = () => (
       </Grid>
       <Grid item xs={12} sm={6}>
         <div css={name}>
-          <Heading2 size={3.6}>妹尾 弦</Heading2>
-          <Heading2 size={2.4}>Gen Senoo</Heading2>
+          <Heading2 size={4}>妹尾 弦</Heading2>
+          <Heading2 size={3.2}>Gen Senoo</Heading2>
         </div>
         <div css={description}>
           <AboutMDX />
