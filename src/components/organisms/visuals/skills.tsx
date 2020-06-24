@@ -37,7 +37,7 @@ export const Skills: React.FCX = () => (
     <Heading1 size={4.8}>Skill Set</Heading1>
     <Grid container spacing={3}>
       {skillArray.map((skill) => (
-        <Grid item xs={6} sm={2}>
+        <Grid item xs={6} sm={2} key={skill.tech}>
           <TechIcon filename={skill.icon}>{skill.tech}</TechIcon>
         </Grid>
       ))}
