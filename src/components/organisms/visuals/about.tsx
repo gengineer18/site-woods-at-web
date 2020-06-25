@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import AnyImage from 'src/components/utils/any-image';
+import { AnyImage } from 'src/components/';
 import { Heading1, Heading2 } from 'src/components/atoms';
 import { visuals } from 'src/styles';
 import Grid from '@material-ui/core/Grid';

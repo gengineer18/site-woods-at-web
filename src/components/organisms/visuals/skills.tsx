@@ -43,7 +43,7 @@ export const Skills: React.FCX = () => (
     <Grid container spacing={3}>
       {skillArray.map((skill) => (
         <Grid item xs={6} sm={2} key={skill.tech}>
-          <TechIcon filename={skill.icon}>{skill.tech}</TechIcon>
+          <TechIcon filename={`icons/${skill.icon}`}>{skill.tech}</TechIcon>
         </Grid>
       ))}
     </Grid>
