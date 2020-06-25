@@ -3,6 +3,6 @@ export type Work = {
   name: string;
   url: string;
   description: string;
-  imagePath: string;
+  image: string;
   skills: Array<string>;
 };
