@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Modal, Paper, Grid } from '@material-ui/core';
+import { Modal, Paper, Grid, Button } from '@material-ui/core';
 import { css } from '@emotion/core';
 import { Work } from 'src/types/Work';
 import { AnyImage } from 'src/components/';
@@ -22,6 +22,14 @@ const skillList = css(`{
     }
 }`);
 
+const heading = css({
+  textAlign: `center`,
+});
+
+const button = css({
+  margin: `10px`,
+});
+
 export const ModalItem: React.FCX<{ work: Work }> = ({ work }) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => {
@@ -32,10 +40,13 @@ export const ModalItem: React.FCX<{ work: Work }> = ({ work }) => {
   };
   return (
     <div>
+      <h2 css={heading}>{work.name}</h2>
       <AnyImage filename={work.image} />
-      <button type='button' onClick={handleOpen}>
-        Detail
-      </button>
+      <div css={button}>
+        <Button fullWidth variant='outlined' color='primary' onClick={handleOpen}>
+          Detail
+        </Button>
+      </div>
       <Modal
         open={open}
         onClose={handleClose}
