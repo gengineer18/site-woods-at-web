@@ -21,6 +21,7 @@ const WorksArray: Array<Work> = [
     Nuxtで作りましたがReactに置き換えることを検討中。
     `,
     image: `works/stgrmeikan.png`,
+    git: `https://github.com/gengineer18/stadium-gourmet-list`,
     skills: [`Nuxt.js`, `TypeScript`, `Buefy`, `SCSS`, `Firebase`, `GAE(SE)`, `Figma`],
   },
   {
@@ -31,6 +32,7 @@ const WorksArray: Array<Work> = [
     フリーランスエンジニアとしての働き方やフロントエンドエンジニアとして得た知識などの備忘を書いていきます。
     Markdownで記述ができるため、記事をGit管理しやすいのも利点になっています。`,
     image: `works/blog.png`,
+    git: `https://github.com/gengineer18/woods-at-web-log`,
     skills: [`Nuxt.js`, `TypeScript`, `Vuetify`, `SCSS`, `Contentful`, `Netlify`, `Figma`],
   },
   {
@@ -42,14 +44,16 @@ const WorksArray: Array<Work> = [
     #web1weekという1週間のハッカソンイベントで、スピード感を持って作りました。
     LIKEボタンを何度でも上限なく連打できるのが特長です。`,
     image: `works/dogsndachs.png`,
+    git: `https://github.com/gengineer18/dogs-n-dachs`,
     skills: [`Nuxt.js`, `Vuetify`, `SCSS`, `Firebase`, `Figma`],
   },
   {
     id: `portfolio`,
     name: `Woods At Web Site`,
     url: `https://woodsatweb.com/`,
-    description: `このサイトです。React/Gatsby.jsの練習を兼ねて作っています。`,
+    description: `このサイトです。React/Gatsby.jsの練習を兼ねて作っています。こちらを大いに参考にさせていただきました。https://qiita.com/hppRC/items/b22e8426d021938601fd`,
     image: `works/portfolio.png`,
+    git: `https://github.com/gengineer18/dogs-n-dachs`,
     skills: [`React`, `Gatsby.js`, `TypeScript`, `Material-UI`, `emotion`, `Netlify`, `Figma`],
   },
   {
@@ -58,6 +62,7 @@ const WorksArray: Array<Work> = [
     url: `https://kyufutter10.web.app/`,
     description: `SPAでのOGP画像生成の練習がてらに作ったものです。新型コロナウイルスの影響により給付された10万円で何がしたいかを画像つきで共有できるアプリです。`,
     image: `works/kyufutter.png`,
+    git: `https://github.com/gengineer18/kyufutter`,
     skills: [`Nuxt.js`, `JavaScript`, `Vuetify`, `Firebase`],
   },
 ];

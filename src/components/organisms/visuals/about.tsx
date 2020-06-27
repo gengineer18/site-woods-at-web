@@ -33,6 +33,26 @@ export const About: React.FCX = () => (
         <div css={description}>
           <AboutMDX />
         </div>
+        <div css={description}>
+          <p>
+            Twitter:
+            <a href='https://twitter.com/gengineer18' target='_blank' rel='noreferrer'>
+              @gengineer18
+            </a>
+          </p>
+          <p>
+            Facebook:
+            <a href='https://www.facebook.com/gen.senoo' target='_blank' rel='noreferrer'>
+              妹尾 弦
+            </a>
+          </p>
+          <p>
+            GitHub:
+            <a href='https://github.com/gengineer18' target='_blank' rel='noreferrer'>
+              gengineer18
+            </a>
+          </p>
+        </div>
       </Grid>
     </Grid>
   </div>

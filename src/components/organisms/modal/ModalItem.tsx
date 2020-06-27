@@ -68,13 +68,23 @@ export const ModalItem: React.FCX<{ work: Work }> = ({ work }) => {
               <p id='simple-modal-description' css={description}>
                 {work.description}
               </p>
-              <Box mb={4}>
+              <Box mb={3}>
                 <Typography variant='h4' display='block' align='center'>
                   DEMO
                 </Typography>
                 <Typography variant='h5' display='block' align='center' gutterBottom>
                   <a href={work.url} target='_blank' rel='noreferrer'>
                     {work.url}
+                  </a>
+                </Typography>
+              </Box>
+              <Box mb={3}>
+                <Typography variant='h4' display='block' align='center'>
+                  GitHub
+                </Typography>
+                <Typography variant='h5' display='block' align='center' gutterBottom>
+                  <a href={work.git} target='_blank' rel='noreferrer'>
+                    Link
                   </a>
                 </Typography>
               </Box>
