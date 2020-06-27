@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import AnyImage from 'src/components/utils/any-image';
+import { AnyImage } from 'src/components/';
 
 type prop = {
   filename: string;

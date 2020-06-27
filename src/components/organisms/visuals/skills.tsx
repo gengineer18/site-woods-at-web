@@ -4,11 +4,16 @@ import { Heading1, TechIcon } from 'src/components/atoms';
 import { visuals } from 'src/styles';
 import Grid from '@material-ui/core/Grid';
 
+type Skill = {
+  icon: string;
+  tech: string;
+};
+
 const skills = css({
   margin: `0 15vw`,
 });
 
-const skillArray = [
+const skillArray: Array<Skill> = [
   { icon: `javascript.png`, tech: `JavaScript` },
   { icon: `typescript.png`, tech: `TypeScript` },
   { icon: `vue.png`, tech: `Vue.js` },
@@ -38,7 +43,7 @@ export const Skills: React.FCX = () => (
     <Grid container spacing={3}>
       {skillArray.map((skill) => (
         <Grid item xs={6} sm={2} key={skill.tech}>
-          <TechIcon filename={skill.icon}>{skill.tech}</TechIcon>
+          <TechIcon filename={`icons/${skill.icon}`}>{skill.tech}</TechIcon>
         </Grid>
       ))}
     </Grid>

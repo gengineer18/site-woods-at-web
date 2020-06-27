@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import AnyImage from 'src/components/utils/any-image';
+import { AnyImage } from 'src/components/';
 import { Heading1, Heading2 } from 'src/components/atoms';
 import { visuals } from 'src/styles';
 import Grid from '@material-ui/core/Grid';
@@ -23,7 +23,7 @@ export const About: React.FCX = () => (
     <Heading1 size={4.8}>About Me</Heading1>
     <Grid container spacing={3}>
       <Grid item xs={12} sm={6}>
-        <AnyImage filename='myicon.png' />
+        <AnyImage filename='icon.png' />
       </Grid>
       <Grid item xs={12} sm={6}>
         <div css={name}>
