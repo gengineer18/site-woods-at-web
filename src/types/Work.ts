@@ -4,5 +4,6 @@ export type Work = {
   url: string;
   description: string;
   image: string;
+  git: string;
   skills: Array<string>;
 };
