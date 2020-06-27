@@ -4,7 +4,6 @@ export default css`
   flex: 1;
 
   width: 100%;
-  padding-bottom: 5vh;
 
   margin: 0 auto;
 
