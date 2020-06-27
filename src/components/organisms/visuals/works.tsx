@@ -50,7 +50,7 @@ const WorksArray: Array<Work> = [
     url: `https://woodsatweb.com/`,
     description: `このサイトです。React/Gatsby.jsの練習を兼ねて作っています。`,
     image: `works/portfolio.png`,
-    skills: [`React`, `Gatsby.js`, `TypeScript`, `Material-UI`, `emotion`, `Figma`],
+    skills: [`React`, `Gatsby.js`, `TypeScript`, `Material-UI`, `emotion`, `Netlify`, `Figma`],
   },
   {
     id: `kyufutter`,
