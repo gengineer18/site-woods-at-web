@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import { AnyImage } from 'src/components/';
-import { Heading1, Heading2 } from 'src/components/atoms';
+import { Heading1, Heading2, IconTwitter, IconFacebook, IconGitHub, LinkToOutside } from 'src/components/atoms';
 import { visuals } from 'src/styles';
 import Grid from '@material-ui/core/Grid';
 import AboutMDX from 'src/internal/about.mdx';
@@ -16,6 +16,10 @@ const name = css({
 
 const description = css({
   fontSize: `1.8rem`,
+});
+
+const icon = css({
+  marginRight: `1rem`,
 });
 
 export const About: React.FCX = () => (
@@ -35,22 +39,16 @@ export const About: React.FCX = () => (
         </div>
         <div css={description}>
           <p>
-            Twitter:
-            <a href='https://twitter.com/gengineer18' target='_blank' rel='noreferrer'>
-              @gengineer18
-            </a>
+            <IconTwitter css={icon} />
+            <LinkToOutside href='https://twitter.com/gengineer18'>@gengineer18</LinkToOutside>
           </p>
           <p>
-            Facebook:
-            <a href='https://www.facebook.com/gen.senoo' target='_blank' rel='noreferrer'>
-              妹尾 弦
-            </a>
+            <IconFacebook css={icon} />
+            <LinkToOutside href='https://www.facebook.com/gen.senoo'>妹尾 弦</LinkToOutside>
           </p>
           <p>
-            GitHub:
-            <a href='https://github.com/gengineer18' target='_blank' rel='noreferrer'>
-              gengineer18
-            </a>
+            <IconGitHub css={icon} />
+            <LinkToOutside href='https://github.com/gengineer18'>gengineer18</LinkToOutside>
           </p>
         </div>
       </Grid>
