@@ -3,6 +3,7 @@ import { Modal, Paper, Grid, Button, Typography, Box } from '@material-ui/core';
 import { css } from '@emotion/core';
 import { Work } from 'src/types/Work';
 import { AnyImage } from 'src/components/';
+import { IconGitHub } from 'src/components/atoms';
 
 const modal = css({
   position: `absolute`,
@@ -25,6 +26,10 @@ const skillList = css(`{
 
 const button = css({
   margin: `10px`,
+});
+
+const github = css({
+  marginLeft: `.5rem`,
 });
 
 const description = css({
@@ -80,7 +85,8 @@ export const ModalItem: React.FCX<{ work: Work }> = ({ work }) => {
               </Box>
               <Box mb={3}>
                 <Typography variant='h4' display='block' align='center'>
-                  GitHub
+                  <IconGitHub />
+                  <span css={github}>GitHub</span>
                 </Typography>
                 <Typography variant='h5' display='block' align='center' gutterBottom>
                   <a href={work.git} target='_blank' rel='noreferrer'>
