@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 import { AnyImage } from 'src/components/';
 
-type prop = {
+type Prop = {
   filename: string;
 };
 
@@ -24,7 +24,7 @@ const text = css({
   fontSize: `2.0rem`,
 });
 
-export const TechIcon: React.FCX<prop> = ({ filename, children }) => (
+export const TechIcon: React.FCX<Prop> = ({ filename, children }) => (
   <>
     <div css={wrap}>
       <AnyImage filename={filename} css={icon} />
