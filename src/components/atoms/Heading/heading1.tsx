@@ -7,8 +7,8 @@ const heading = (size: number) =>
     textAlign: `center`,
   });
 
-type size = {
+type Size = {
   size: number;
 };
 
-export const Heading1: React.FCX<size> = ({ children, size }) => <h1 css={heading(size)}>{children}</h1>;
+export const Heading1: React.FCX<Size> = ({ children, size }) => <h1 css={heading(size)}>{children}</h1>;

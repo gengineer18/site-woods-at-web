@@ -5,8 +5,8 @@ const anchor = css({
   height: `10vh`,
 });
 
-type anchorProp = {
+type AnchorProp = {
   id: string;
 };
 
-export const Anchor: React.FCX<anchorProp> = ({ id }) => <div css={anchor} id={id} />;
+export const Anchor: React.FCX<AnchorProp> = ({ id }) => <div css={anchor} id={id} />;
