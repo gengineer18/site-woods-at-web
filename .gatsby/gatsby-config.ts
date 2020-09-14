@@ -35,6 +35,12 @@ export default {
     `gatsby-plugin-offline`,
     `gatsby-plugin-lodash`,
     {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+          publisherId: `ca-pub-7736086061521671`
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
